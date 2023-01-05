@@ -33,8 +33,6 @@ class ViewController: UIViewController {
     
     @IBAction func stopBtn(_ sender: Any) {
         timer?.invalidate()
-        timer = nil
-      //  countLabel.text = "Count: 0"
         updateCounter()
         switchTimer.isEnabled = true
     }
@@ -42,7 +40,6 @@ class ViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         updateCounter()
-        
     }
     
     func updateCounter() {
